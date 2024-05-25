@@ -1,8 +1,9 @@
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
-import './globals.css'
+import '../styles/globals.css'
+import Services from "@/components/Services";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
     <NavBar/>
