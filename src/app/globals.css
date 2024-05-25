@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+ .newCursor {
+     cursor: pointer;
+     /* top: 70%; */
+     position: absolute;
+     z-index: 1;
+     /* margin-right: 10px; */
+   }
+  
+   /* .speech {
+     font-size: 0.8em;
+     color: #fff;
+     background: #0052cc;
+     position: relative;
+     padding: 10px;
+     border-radius: 10px;
+     margin: auto;
+     margin-left: -3em;
+     max-width: 150px;
+     min-width: 100px;
+   }
+  
+   .speech::after {
+     content: "";
+     border: 15px solid transparent;
+     position: absolute;
+   }
+  
+   .left.speech::after {
+     border-right-color: #0052cc;
+     border-left: 0;
+     left: -10px;
+     top: 50%;
+     margin-top: -20px;
+   } */
