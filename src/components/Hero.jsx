@@ -21,7 +21,6 @@ const Hero = () => {
         cursor.style.left = screen.width - 400 + "px";
       if (screen.width > 1100) {
         cursor.style.left = x - 100 + "px"
-        // cursor.style.right=x-1300+"px"
       }
       if (screen.width < 1100) {
         if (x >= (screen.width - 250))
