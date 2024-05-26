@@ -29,9 +29,9 @@ const ContactUsModal = () => {
 
   return (
     <div>
-      <Button variant="contained" color="primary" onClick={handleOpen}>
+      {/* <Button variant="contained" color="primary" onClick={handleOpen}>
         Contact Us
-      </Button>
+      </Button> */}
       <Modal
         open={open}
         onClose={handleClose}

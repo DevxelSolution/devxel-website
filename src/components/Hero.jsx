@@ -44,12 +44,12 @@ const Hero = () => {
           alt="bg Image"
           className="lg:-my-24 mt-24"
         />
-        <div className="absolute inset-0 flex items-center justify-center flex-col">
+        <div className="absolute inset-0 flex items-center justify-center flex-col text-pretty">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
-            className="text-white lg:text-9xl text-5xl lg:-mt-32 font-bold"
+            className="text-white lg:text-9xl text-5xl lg:-mt-32 font-bold text-pretty"
           >
             DevXel
           </motion.h1>

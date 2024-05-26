@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'gradient-rainbow': 'linear-gradient(to right top, #0000ff, #ff1493)',
+        'gradient-rainbow': 'linear-gradient(90deg, #0000ff, #ff1493)',
       }),
     },
   },
