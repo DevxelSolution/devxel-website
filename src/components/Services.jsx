@@ -37,18 +37,18 @@ const Services = () => {
 				/>
 
 				<ServiceCard
-					title="UI/UX Design"
-					content="Our highly efficient UI/UX designers craft beautiful applications that promise astounding user experience. We consistently brain-storm on building elite designs that are functionally simple to use."
+					title="Deployment & Support"
+					content="Burnt out from your past experience? No worries. We will help you enhance and deploy your product. We offer bug resolution, testing, efficiency check, peer review, and complete support to ensure that your product up and running in no time."
 				/>
 
 				<ServiceCard
-					title="UI/UX Design"
-					content="Our highly efficient UI/UX designers craft beautiful applications that promise astounding user experience. We consistently brain-storm on building elite designs that are functionally simple to use."
+					title="Maintenance & Scaling"
+					content="We offer maintenance and scaling service where we keep a constant check on performance. To do so, we do crash test, API failure check, Server failure check, bug resolution, addition of new features, agility, and performance enhancement."
 				/>
 
 				<ServiceCard
-					title="UI/UX Design"
-					content="Our highly efficient UI/UX designers craft beautiful applications that promise astounding user experience. We consistently brain-storm on building elite designs that are functionally simple to use."
+					title="Architecture Design"
+					content="Empower your project's success with our specialized software architecture design services. Our seasoned team crafts tailored, scalable, and high-performing solutions, optimizing every aspect of your software. Elevate your technology foundation with our expertise."
 				/>
 				{/* Add more ServiceCard components for additional services */}
 			</div>
