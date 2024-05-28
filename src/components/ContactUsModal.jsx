@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { Modal, Box, Button, TextField, Typography } from '@mui/material';
 
-const ContactUsModal = () => {
-  const [open, setOpen] = useState(false);
+const ContactUsModal = ({open, handleClose}) => {
+  // const [open, setOpen] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: ''
   });
 
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
