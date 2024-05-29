@@ -1,0 +1,1 @@
+export { default as ABOUTUS } from "./About.json";
