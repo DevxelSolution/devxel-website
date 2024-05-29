@@ -1,10 +1,3 @@
-import LOGO from "./img/logo.png";
-export { default as ICONS } from "./icons";
-
-// export const IMAGES = {
-// 	LOGOIMG: LOGO.src,
-// };
-
 export { default as LOGO } from "./img/logo.png";
 export { default as analysis } from "./otherLinks/analysis.png";
 export { default as dataWarehouse } from "./otherLinks/dataWarehouse.png";
