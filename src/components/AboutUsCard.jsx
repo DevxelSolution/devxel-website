@@ -6,13 +6,11 @@ const AboutUsCard = ({ icon, title, text }) => {
     <>
       <a
         href="#"
-        className="block max-w-md p-6 m-5 bg-white border border-gray-200 rounded-lg shadow ransition-colors duration-300 ease-in-out hover:bg-[#66C3BD] dark:bg-gray-800 dark:border-gray-700 "
+        class="block max-w-md p-6 m-5 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 rounded-lg shadow-2xl ransition-colors dark:bg-gray-800 dark:border-gray-700 transition duration-500 ease-out group hover:scale-95 "
       >
         {icon}
-        <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {title}
-        </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400 hover:text-white">{text}</p>
+        <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white ">{title}</h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400 ">{text}</p>
       </a>
 
       {/* <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
