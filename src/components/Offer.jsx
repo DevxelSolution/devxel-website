@@ -50,7 +50,7 @@ const Offer = () => {
 
   return (
     <div
-      className="bg-blend-overlay bg-white/80 w-full py-5 md:pb-20 lg:h-[50vw] flex flex-col justify-evenly items-center bg-cover bg-center bg-no-repeat"
+      className="bg-blend-overlay bg-white/80 w-full py-5 md:pb-20 lg:h-auto flex flex-col justify-evenly items-center bg-cover bg-center bg-no-repeat"
       id="product"
     >
       <div className="flex flex-col justify-center items-center">
