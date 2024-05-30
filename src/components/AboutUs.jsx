@@ -59,29 +59,41 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="flex justify-evenly p-5 flex-wrap my-10">
-          <AboutUsCard
-            icon={
-              <>
-                <RocketLaunch fontSize="large" className="my-3" />
-              </>
-            }
-            title={"Our Mission"}
-            text={
-              "Devxel aims to transform education by providing an enriching, inclusive, and personalized learning experience through collaboration, innovation, and evidence-based approaches. We believe in empowering students with the skills and confidence they need to excel in an ever-evolving technological landscape."
-            }
-          />
-          <AboutUsCard
-            icon={
-              <>
-                <Visibility fontSize="large" className="my-3" />
-              </>
-            }
-            title={"Our Vission"}
-            text={
-              "Devxel envisions an educational landscape where students thrive academically, socially, and emotionally through innovative methodologies and comprehensive teacher training. Our vision is to create a community of learners who are well-equipped to tackle the challenges of the 21st century."
-            }
-          />
-          {/* <AboutUsCard title={'What we offer'} text={''}/> */}
+          <a
+            href="#"
+            class="block max-w-md p-6 m-5 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 rounded-lg shadow-2xl ransition-colors dark:bg-gray-800 dark:border-gray-700 transition duration-500 ease-out group hover:scale-95 "
+          >
+            <div className="bg-[#f70037] flex justify-center items-center p-1 w-10 h-10 rounded-xl mb-2">
+              <RocketLaunch color="" fontSize="medium" className="my-3" />
+            </div>
+            <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white ">
+              {" "}
+              <span>Our</span> <span className="text-[#f70037]">Mission</span>
+            </h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400 ">
+              Devxel aims to transform education by providing an enriching, inclusive, and personalized learning
+              experience through collaboration, innovation, and evidence-based approaches. We believe in empowering
+              students with the skills and confidence they need to excel in an ever-evolving technological landscape.
+            </p>
+          </a>
+
+          <a
+            href="#"
+            class="block max-w-md p-6 m-5 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 rounded-lg shadow-2xl ransition-colors dark:bg-gray-800 dark:border-gray-700 transition duration-500 ease-out group hover:scale-95 "
+          >
+            <div className="bg-[#f70037] flex justify-center items-center p-1 w-10 h-10 rounded-xl mb-2">
+              <Visibility color="" fontSize="medium" className="my-3" />
+            </div>
+
+            <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white ">
+              <span>Our</span> <span className="text-[#f70037]">Vision</span>
+            </h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400 ">
+              Devxel envisions an educational landscape where students thrive academically, socially, and emotionally
+              through innovative methodologies and comprehensive teacher training. Our vision is to create a community
+              of learners who are well-equipped to tackle the challenges of the 21st century.
+            </p>
+          </a>
         </div>
       </div>
     </>
