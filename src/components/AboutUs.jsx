@@ -25,7 +25,7 @@ const AboutUs = () => {
   }, []);
   return (
     <>
-      <div className="bg-[#211f24] md:-mt-20 py-10">
+      <div className="bg-[#211f24] pt-14 py-10">
         <Heading start={"About"} end={"Us"} />
         <div
           className={`flex justify-between ${width < 600 ? "flex-wrap" : ""}`}
