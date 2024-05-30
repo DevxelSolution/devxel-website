@@ -1,14 +1,15 @@
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
-import '../styles/globals.css'
+import "../styles/globals.css";
 import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
 import Offer from "@/components/Offer";
 import ContactRobo from "@/components/ContactRobo";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import Footer from "@/components/Footer";
+import OurCourses from "../components/OurCourses";
 // ..
 
 export default function HomePage() {
@@ -17,11 +18,12 @@ export default function HomePage() {
   }, []);
   return (
     <>
-    <NavBar/>
-    <ContactRobo/>
-      <Hero/>
-      <AboutUs/>
-      <Offer/>
+      <NavBar />
+      <ContactRobo />
+      <Hero />
+      <AboutUs />
+      <Offer />
+      <OurCourses />
       <Footer />
       {/* <Services/> */}
     </>
