@@ -65,6 +65,7 @@ const AboutUs = () => {
           >
             <div className="bg-[#f70037] flex justify-center items-center p-1 w-10 h-10 rounded-xl mb-2">
               <RocketLaunch color="" fontSize="medium" className="my-3" />
+              <span></span>
             </div>
             <h5 class="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white ">
               {" "}
