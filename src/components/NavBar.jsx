@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import ContactUsModal from "./ContactUsModal";
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,8 +8,39 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const [openModal, setOpenModal] = useState(false);
+
+
+  // const SendEmail = async () => {
+  //   try {
+  //     const response = await fetch('/api/sendEmail', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({
+  //         from: 'your-email@gmail.com', // Your email address
+  //         to: 'recipient-email@gmail.com',
+  //         subject: 'Hello World',
+  //         html: '<p>Congrats on sending your <strong>first email</strong>!</p>',
+  //       }),
+  //     });
+  
+  //     if (!response.ok) {
+  //       throw new Error('Error sending email');
+  //     }
+  
+  //     const data = await response.json();
+  //     console.log('Email sent successfully:', data);
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
+  
   return (
     <>
+      <ContactUsModal open={openModal} handleClose={() => setOpenModal(false)} />
+
      <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -16,6 +49,7 @@ const NavBar = () => {
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             type="button"
+            onClick={() => setOpenModal(true)}
             className="text-white hidden md:block bg-[#66C3BD] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center"
           >
             Contact Us

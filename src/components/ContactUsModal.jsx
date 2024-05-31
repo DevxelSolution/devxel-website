@@ -1,27 +1,35 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Modal, Box, Button, TextField, Typography } from '@mui/material';
+import Swal from 'sweetalert2';
 
 const ContactUsModal = ({open, handleClose}) => {
-  // const [open, setOpen] = useState(false);
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const formRef = useRef(null);
 
+  const scriptUrl =
+  "https://script.google.com/macros/s/AKfycbzqUf-lDvHJWlx9mO9gh4-aYl8umjiGZPCC88EB8W4p5ztccPMKmmCEHc7vXtOYENLqCA/exec";
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setForm({
-      ...form,
-      [name]: value
-    });
-  };
+const handleSubmitModal = (e) => {
+  console.log(formRef.current)
+  fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current), mode: 'no-cors' })
+    .then((res) => {
+      console.log(res);
+      Swal.fire({
+        icon: "success",
+        title: "Thank You!",
+        text: "We have registered your query and will get back to you soon!",
+      });
+    })
+    .catch((err) => console.log(err));
+  formRef.current.reset();
+  handleClose();
+};
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    handleSubmitModal();
     // Here you can handle form submission, e.g., send the data to your backend
-    console.log('Form data:', form);
+    // console.log('Form data:', form);
     handleClose();
   };
 
@@ -52,14 +60,14 @@ const ContactUsModal = ({open, handleClose}) => {
           <Typography id="contact-us-modal-title" variant="h6" component="h2">
             Contact Us
           </Typography>
-          <form onSubmit={handleSubmit} noValidate autoComplete="off">
+          <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
             <TextField
               margin="normal"
               fullWidth
               label="Name"
               name="name"
-              value={form.name}
-              onChange={handleChange}
+              // value={form.name}
+              // onChange={handleChange}
               required
             />
             <TextField
@@ -68,8 +76,8 @@ const ContactUsModal = ({open, handleClose}) => {
               label="Email"
               name="email"
               type="email"
-              value={form.email}
-              onChange={handleChange}
+              // value={form.email}
+              // onChange={handleChange}
               required
             />
             <TextField
@@ -79,8 +87,8 @@ const ContactUsModal = ({open, handleClose}) => {
               name="message"
               multiline
               rows={4}
-              value={form.message}
-              onChange={handleChange}
+              // value={form.message}
+              // onChange={handleChange}
               required
             />
             <Box sx={{ mt: 2 }}>
